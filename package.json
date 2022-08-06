@@ -43,12 +43,21 @@
     ]
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-angular": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "2.7.1"
   },
   "lint-staged": {
-    "*.{js,css,md,ts,tsx}": "prettier --write"
+    "*.{js,ts,tsx,jsx}": [
+      "eslint --ext .js,.ts,.jsx,.tsx --fix",
+      "prettier --write"
+    ],
+    "*.{html,css,less,scss,md}": [
+      "prettier --write"
+    ]
   }
 }
