@@ -44,6 +44,12 @@
 >
 > prettier --check .
 
-### `commitlint`
+### ESlint
+
+执行脚本
+
+> npx eslint .
+
+### [commitlint](https://github.com/conventional-changelog/commitlint)
 
 `yarn add @commitlint/{config-conventional,cli} -D `

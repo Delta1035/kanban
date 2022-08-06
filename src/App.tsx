@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   console.log("测试一下是否格式化");
-
+  const a = 2;
   return (
     <div className="App">
       <header className="App-header">
