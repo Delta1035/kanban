@@ -3,7 +3,6 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  console.log("测试一下是否格式化");
   return (
     <div className="App">
       <header className="App-header">
