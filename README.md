@@ -84,3 +84,7 @@ echo "chore" | commitlint
 ```
 
 `yarn add @commitlint/{config-conventional,cli} -D`
+
+将 commit 加入到 husky
+
+`npx husky add .husky/commit-msg 'npx --no -- commitlint --edit ${1}'`
