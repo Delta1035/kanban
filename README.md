@@ -66,4 +66,21 @@ npx mrm@2 lint-staged
 
 每次 commit 的时候检查 commit msg 是否符合规范
 
-`yarn add @commitlint/{config-conventional,cli} -D `
+`npm install -g @commitlint/cli @commitlint/config-conventional`
+
+安装全局 commitlint 之后可以测试会否成功:
+
+```shell
+echo "chore" | commitlint
+⧗   input: chore
+✖   subject may not be empty [subject-empty]
+✖   type may not be empty [type-empty]
+
+✖   found 2 problems, 0 warnings
+ⓘ   Get help: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
+
+# 正确格式:
+ echo "chore: 增加了commitlint全局包" | commitlint
+```
+
+`yarn add @commitlint/{config-conventional,cli} -D`
