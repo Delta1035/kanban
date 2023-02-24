@@ -62,6 +62,22 @@ npx mrm@2 lint-staged
 
 > npx eslint .
 
+安装 [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation)
+
+`npm i -D eslint-config-prettier`
+
+然后
+
+```json
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "prettier" // 覆盖eslint部分规则避免冲突
+    ]
+  },
+```
+
 ### [commitlint](https://github.com/conventional-changelog/commitlint)
 
 每次 commit 的时候检查 commit msg 是否符合规范
