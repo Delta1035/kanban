@@ -34,11 +34,15 @@
 
 #### pre-commit hook
 
+安装完后会在项目根目录生成.husky 文件夹
+
+在每次代码提交之前自动格式化
+
+新版本每次 commit 之前执行格式化
+
 ```shell
 npx mrm@2 lint-staged
 ```
-
-在每次代码提交之前自动格式化
 
 #### 避免与 eslint 的冲突
 
@@ -59,5 +63,7 @@ npx mrm@2 lint-staged
 > npx eslint .
 
 ### [commitlint](https://github.com/conventional-changelog/commitlint)
+
+每次 commit 的时候检查 commit msg 是否符合规范
 
 `yarn add @commitlint/{config-conventional,cli} -D `
