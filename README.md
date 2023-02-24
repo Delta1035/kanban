@@ -24,13 +24,21 @@
 
 #### 命令行格式化文件
 
-> npx prettier --write .
+> npx prettier --write . (注意后面的 . 表示格式化当前文件夹)
 >
 > 根据 package.json
 
 ##### 记录使用 prettier 格式化遇到的问题
 
 1. 文件编码格式不是 utf-8 而是 utf-16 导致 prettier 格式化报错的问题(从网上复制来的文本,格式是 utf-16)
+
+#### pre-commit hook
+
+```shell
+npx mrm@2 lint-staged
+```
+
+在每次代码提交之前自动格式化
 
 #### 避免与 eslint 的冲突
 

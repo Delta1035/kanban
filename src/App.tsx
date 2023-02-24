@@ -13,6 +13,8 @@ function App() {
     "李四356",
   ]);
 
+  const myRef = React.createRef();
+
   const handleChange = (e: any) => {
     console.log(e);
     setSearchValue(e.target.value);
@@ -21,7 +23,11 @@ function App() {
   };
   return (
     <div className="App">
-      <Search searchValue={searchValue} handleChange={handleChange}></Search>
+      <Search
+        ref={myRef}
+        searchValue={searchValue}
+        handleChange={handleChange}
+      ></Search>
       <List list={list}></List>
     </div>
   );

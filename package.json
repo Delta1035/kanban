@@ -53,11 +53,7 @@
     "prettier": "2.7.1"
   },
   "lint-staged": {
-    "*.{js,ts,tsx,jsx}": [
-      "eslint --ext .js,.ts,.jsx,.tsx --fix",
-      "prettier --write"
-    ],
-    "*.{html,css,less,scss,md}": [
+    "*.{html,css,less,scss,md,js,ts,tsx,jsx}": [
       "prettier --write"
     ]
   }
