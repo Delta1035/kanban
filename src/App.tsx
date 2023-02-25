@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Search from "./pages/panel/Search";
 import List from "./pages/panel/List";
+import { ProjectListScreen } from "screens/project-list";
 
 function App() {
   const [searchValue, setSearchValue] = useState("");
@@ -23,12 +24,13 @@ function App() {
   };
   return (
     <div className="App">
-      <Search
+      {/* <Search
         ref={myRef}
         searchValue={searchValue}
         handleChange={handleChange}
       ></Search>
-      <List list={list}></List>
+      <List list={list}></List> */}
+      <ProjectListScreen></ProjectListScreen>
     </div>
   );
 }

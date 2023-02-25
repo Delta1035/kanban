@@ -1,24 +1,50 @@
 {
-  "posts": [
+  "users":[
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "delta啊"
+      "id":1,
+      "name":"张三"
     },
     {
-      "title": "json-server",
-      "author": "delta",
-      "id": 3
+      "id":2,
+      "name":"李四"
+    },
+    {
+      "id":3,
+      "name":"王五"
+    },
+    {
+      "id":4,
+      "name":"郑六"
     }
   ],
-  "comments": [
+  "projects": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "起手管理",
+      "personId": 1,
+      "organization": "外卖组",
+      "created": 16324234234
+    },
+    {
+      "id": 2,
+      "name": "团购app",
+      "personId": 2,
+      "organization": "团购组",
+      "created": 16324234234
+    },
+    {
+      "id": 3,
+      "name": "物料管理系统",
+      "personId": 3,
+      "organization": "物料组组",
+      "created": 16324234234
+    },
+    {
+      "id": 4,
+      "name": "签核系统",
+      "personId": 4,
+      "organization": "签核组",
+      "created": 16324234234
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

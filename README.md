@@ -104,3 +104,7 @@ echo "chore" | commitlint
 将 commit 加入到 husky
 
 `npx husky add .husky/commit-msg 'npx --no -- commitlint --edit ${1}'`
+
+## react 知识点
+
+### 变量提升
