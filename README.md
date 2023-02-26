@@ -108,3 +108,11 @@ echo "chore" | commitlint
 ## react 知识点
 
 ### 变量提升
+
+### QS
+
+用来序列化 url 查询参数
+
+`pnpm add qs`
+
+`pnpm add @types/qs -D`
