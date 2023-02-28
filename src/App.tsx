@@ -1,10 +1,15 @@
+/*
+ * @Author: delta 528491526@qq.com
+ * @Date: 2022-08-07 01:56:34
+ * @LastEditors: delta 528491526@qq.com
+ * @LastEditTime: 2023-02-28 17:32:15
+ * @FilePath: \kanban\src\App.tsx
+ * @Description:
+ *
+ */
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Search from "./pages/panel/Search";
-import List from "./pages/panel/List";
-import { ProjectListScreen } from "screens/project-list";
-
+import { LoginScreen } from "screens/login";
 function App() {
   const [searchValue, setSearchValue] = useState("");
   const [list, setList] = useState([
@@ -30,7 +35,9 @@ function App() {
         handleChange={handleChange}
       ></Search>
       <List list={list}></List> */}
-      <ProjectListScreen></ProjectListScreen>
+      {/* <ProjectListScreen></ProjectListScreen> */}
+      {/* <ArrayTest></ArrayTest> */}
+      <LoginScreen></LoginScreen>
     </div>
   );
 }
