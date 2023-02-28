@@ -1,7 +1,17 @@
-export const isFalsy = (value: any) => (value === 0 ? true : !!value);
+/*
+ * @Author: delta 528491526@qq.com
+ * @Date: 2023-02-26 13:20:40
+ * @LastEditors: delta 528491526@qq.com
+ * @LastEditTime: 2023-02-28 14:41:49
+ * @FilePath: \kanban\src\utils\cleanObject.ts
+ * @Description:
+ *
+ */
+export const isFalsy = (value: unknown): boolean =>
+  value === 0 ? true : !!value;
 
 export const cleanobject = (object: {
-  [key in string | number | symbol]: any;
+  [key in string | number | symbol]: unknown;
 }) => {
   const result = { ...object };
   Object.keys(object).forEach((key) => {

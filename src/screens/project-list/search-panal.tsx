@@ -1,16 +1,19 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
-import { useEffect } from "react";
-import { Param, User } from "./type";
+/*
+ * @Author: delta 528491526@qq.com
+ * @Date: 2023-02-25 00:01:06
+ * @LastEditors: delta 528491526@qq.com
+ * @LastEditTime: 2023-02-28 14:08:18
+ * @FilePath: \kanban\src\screens\project-list\search-panal.tsx
+ * @Description:
+ *
+ */
+import { SearchPanelProps } from "./type";
 const apiUrl = process.env.REACT_APP_API_URL;
 export default function SearchPanal({
   param,
   setParam,
   users,
-}: {
-  param: Param;
-  setParam: Dispatch<SetStateAction<Param>>;
-  users: User[];
-}) {
+}: SearchPanelProps) {
   return (
     <form action="">
       <input

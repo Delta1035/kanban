@@ -9,15 +9,9 @@
  */
 
 import React from "react";
-import { ListProject, User } from "./type";
+import { ListProps, Project, User } from "./type";
 
-export default function List({
-  list,
-  users,
-}: {
-  list: ListProject[];
-  users: User[];
-}) {
+export default function List({ list, users }: ListProps) {
   return (
     <table>
       <thead>
